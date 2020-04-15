@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	max-width: 100%;
+}
+
+.block1 {
+	height: 100vh;
+
+}
+
+.header-logo {
+	height: 60px;
+}
+
+.nav-text li a {
+	color: black;
+	text-decoration: none;
+}
+
+.button {
+	background-image: linear-gradient(to right, #8fd98f, #3fab3f);
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.block-header h4 {
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	background-image: linear-gradient(to right, #3fab3f, #3fab3f);
+	background-size: 40px 7%;
+	background-repeat: no-repeat;
+	background-position: bottom, 4px 0;
+}
+
+.block2-additional {
+	max-height: 50vh;
+	background-image: url(keyboard_bg.png);
+	-webkit-background-size: 25vh;
+	background-size: 55vh;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.btn-block2 {
+	position: relative;
+}
+
+.arrow-btn img {
+	position: absolute;
+	right: 275px;
+	bottom: 20px;
+	height: 10vh;
+	transform: rotate(60deg);
+	opacity: .6;
+}
+
+.block3 {
+	background-color: #61b861;
+	background-image: url(bg_laptop.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+
+}
+
+.block3 .block-header h4 {
+	color: white;
+	margin-top: 80px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	background-image: none;
+}
+
+.block3-main {
+	color: white;
+}
+
+.block3-main button {
+	background-image: linear-gradient(white, white);
+	color: #61b861;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn-block3 {
+	margin-top: 5%;
+}
+
+.card-body_text {
+	font-size: 12px;
+}
+
+.text-active {
+	font-size: 12px;
+	color: #3fab3f;
+}
+
+.block5 {
+	max-height: 40vh;
+}
+
+.block5-logo {
+	height: 40px;
+	width: auto;
+	filter: grayscale(100%);
+	opacity: 0.3;
+}
+
+.block5-logo:hover {
+	filter: none;
+	opacity: 1;
+}
+
+
+
+input,
+textarea {
+	border: 1.5px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.footer {
+	color: #fff;
+	background-color: #000;
+}
+
+.footer-title p {
+	border-bottom: 1px solid #cfcfcf;
+	padding-bottom: 15px;
+	font-size: 20px;
+}
+
+.footer-subtitle p {
+	color: #cecece;
+	font-size: 13px;
+}
+
+.footer-subtitle img {
+	padding-left: 15px;
+}
+
+
+
+.swipe-left button {
+	background-image: linear-gradient(to right, #8fd98f, #3fab3f);
+	font-size: 25px;
+	color: white;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	width: 50px;
+	height: 40px;
+	cursor: pointer;
+	position: relative;
+	top: 350px;
+	right: 0px;
+	z-index: 1;
+}
+
+.swipe-right button {
+	background-image: linear-gradient(to right, #8fd98f, #3fab3f);
+	font-size: 25px;
+	color: white;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	width: 50px;
+	height: 40px;
+	cursor: pointer;
+	position: relative;
+	top: 350px;
+	right: 0px;
+	z-index: 1;
+}
+
+
+@media screen and (max-width: 1199px) {
+	.block2-right {
+	margin-left: 40px;
+	}
+	.block2 .image-ipad img {
+		display: none;
+	}
+
+	.block3 {
+		background-image: none;
+	}
+
+
+	.btn-block3 {
+		margin-top: 20px;
+	}
+
+
+}
+
+@media screen and (max-width: 992px) {
+	.our-students {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+	.block2-additional {
+		background: none;
+	}
+
+	.arrow-btn {
+		display: none;
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	.block3 .block-header h4 {
+		margin-top: 40px;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
+
+	.block-slider .slider1:not(:first-child) {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.block6-form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-content: center;
+		align-items: center;
+	}
+
+	.block6-form .btn-block {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-text {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	
+	}
+}
